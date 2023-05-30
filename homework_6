@@ -20,15 +20,15 @@ public class WorkingTimer {
         // Корректировка строки вывода:
         if ((hours == null || minutes == null) && ((n / 3600) == 1 || (n % 3600) / 60 == 1)) {
             if (hours == null) {
-                output = "There is" + minutes + " left until the end of the working day.";
+                output = "There is " + minutes + " left until the end of the working day.";
             } else if (minutes == null) {
-                output = "There is" + hours + " left until the end of the working day.";
+                output = "There is " + hours + " left until the end of the working day.";
             }
         } else {
             if (hours == null) {
-                output = "There are" + minutes + " left until the end of the working day.";
+                output = "There are " + minutes + " left until the end of the working day.";
             } else if (minutes == null) {
-                output = "There are" + hours + " left until the end of the working day.";
+                output = "There are " + hours + " left until the end of the working day.";
             }
         }
         if (hours == null && minutes == null){
@@ -39,9 +39,10 @@ public class WorkingTimer {
         //Вывод
         System.out.println();
         System.out.println(output);
-        System.out.println(">>>   human version");
+        System.out.println(">>>>human version>>>>");
+        System.out.println();
         System.out.println(n + "s");
-        System.out.println(">>>   version for API");
-        
+        System.out.println(">>>>version for API>>");
+
     }
 }
