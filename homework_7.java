@@ -44,6 +44,8 @@ public class DayOfWeek {
                 System.out.print("Повторите ввод: ");
             }
         }
+        
+        sc.close();
 
         System.out.println("\nСпасибо, хорошего дня!");
         if (error>0)
