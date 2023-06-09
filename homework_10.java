@@ -46,7 +46,7 @@ public class Elevator {
                     break;
                 else i -= m;
             }
-        } else if (m == n && n >= h) counter = 1;
+        } else if (n >= h) counter = 1;
         else counter = -1;
     }
 
